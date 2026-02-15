@@ -22,7 +22,7 @@ export default function Home() {
             {/* サブタイトルバッジ */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 text-sm mb-8 border border-white/10">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              求人掲載・求職者登録 すべて完全無料
+              求職者は完全無料 ・ 医院は基本掲載無料
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
@@ -33,8 +33,8 @@ export default function Home() {
             </h1>
 
             <p className="text-base md:text-lg text-rose-100 mb-4 max-w-2xl mx-auto leading-relaxed">
-              AIの力で、従来の人材紹介とは一線を画す
-              マッチング体験を実現します。
+              歯科業界を知る歯科医師が運営する、
+              従来の人材紹介とは一線を画す採用プラットフォームです。
             </p>
             <p className="text-sm md:text-base text-rose-200 mb-10 max-w-2xl mx-auto">
               営業電話ゼロ。紹介手数料ゼロ。あなたのペースで、あなたに合った職場を。
@@ -52,7 +52,7 @@ export default function Home() {
                 href="/post"
                 className="bg-teal-400 text-gray-900 px-8 py-4 rounded-xl text-lg font-bold hover:bg-teal-300 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
-                医院の方はこちら（無料）
+                医院の方はこちら（基本無料）
               </Link>
             </div>
 
@@ -62,7 +62,7 @@ export default function Home() {
                 <svg className="w-5 h-5 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
-                <span>完全無料</span>
+                <span>基本無料</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -203,13 +203,13 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg mb-2">AIマッチング</h3>
+              <h3 className="font-bold text-lg mb-2">AIマッチング（開発中）</h3>
               <p className="text-gray-600 leading-relaxed mb-3">
-                条件だけでなく、職場の雰囲気や働き方の相性もAIで分析。
-                「長く働ける職場」を見つけるお手伝いをします。
+                条件だけでなく、職場の雰囲気や働き方の相性もAIで分析する機能を開発しています。
+                「長く働ける職場」を見つけるお手伝いを目指しています。
               </p>
               <span className="inline-block text-xs font-semibold px-3 py-1 bg-teal-50 text-teal-700 rounded-full">
-                順次導入予定
+                開発中・順次導入予定
               </span>
             </div>
 
@@ -227,17 +227,17 @@ export default function Home() {
               </p>
             </div>
 
-            {/* 特徴3: 完全無料 */}
+            {/* 特徴3: 低コスト */}
             <div className="group bg-white rounded-2xl p-6 md:p-8 border border-gray-100 hover:border-rose-200 hover:shadow-lg transition-all">
               <div className="w-14 h-14 bg-rose-50 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-rose-100 transition-colors">
                 <svg className="w-7 h-7 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg mb-2">掲載・応募は完全無料</h3>
+              <h3 className="font-bold text-lg mb-2">圧倒的な低コスト</h3>
               <p className="text-gray-600 leading-relaxed">
-                営業マンの人件費がないからこそ実現できる価格です。
-                求人掲載も、応募も、採用が決まっても0円です。
+                求職者は完全無料。医院も基本掲載は無料から始められます。
+                紹介手数料・成功報酬は一切なし。月額プランのみのシンプルな料金体系です。
               </p>
             </div>
 
@@ -339,10 +339,11 @@ export default function Home() {
                   <tr className="bg-rose-50/70">
                     <td className="p-4 md:p-5">
                       <div className="font-bold text-rose-700 text-lg">DentalAI Match</div>
-                      <div className="text-sm text-rose-500 mt-0.5">掲載料・紹介手数料・成功報酬すべて無料</div>
+                      <div className="text-sm text-rose-500 mt-0.5">紹介手数料・成功報酬なし。月額制のシンプル料金</div>
                     </td>
                     <td className="p-4 md:p-5 text-right">
-                      <span className="text-rose-700 font-bold text-2xl">0円</span>
+                      <div className="text-rose-700 font-bold text-xl">月額 0〜19,800円</div>
+                      <div className="text-xs text-rose-500 mt-1">基本プラン無料・有料プランあり</div>
                     </td>
                   </tr>
                 </tbody>
@@ -360,8 +361,9 @@ export default function Home() {
             </h3>
             <p className="text-gray-600 leading-relaxed">
               従来の人材紹介は、営業担当者の人件費・オフィス維持費・広告費などが紹介手数料に含まれています。
-              DentalAI Matchは、AIとテクノロジーを活用することで、これらのコストを大幅に削減。
-              歯科医師自らが運営し、人件費を最小限に抑えることで、完全無料を実現しています。
+              DentalAI Matchは、テクノロジーを活用することでこれらのコストを大幅に削減。
+              歯科医師自らが運営し、人件費を最小限に抑えることで、基本プラン無料・有料プランでも月額最大19,800円という
+              圧倒的な低コストを実現しています。紹介手数料や成功報酬は一切かかりません。
             </p>
           </div>
         </div>
@@ -376,7 +378,7 @@ export default function Home() {
               かんたん<span className="text-rose-600">ステップ</span>
             </h2>
             <p className="text-gray-500">
-              登録から採用まで、すべて無料で利用できます
+              求職者は完全無料。医院も基本プランから始められます
             </p>
           </div>
 
@@ -392,7 +394,7 @@ export default function Home() {
               <div className="space-y-6">
                 {[
                   { step: "1", title: "無料登録", desc: "希望条件やスキルを入力。最短3分で完了します。" },
-                  { step: "2", title: "AIがマッチング", desc: "あなたに合った求人をAIが分析してお知らせ（順次導入）。" },
+                  { step: "2", title: "求人を探す", desc: "条件に合った求人を検索。AIマッチング機能も順次導入予定です。" },
                   { step: "3", title: "直接やり取り", desc: "気になる医院と直接コミュニケーション。見学もOK。" },
                   { step: "4", title: "入職", desc: "自分のペースで納得のいく転職を実現できます。" },
                 ].map((item, index) => (
@@ -428,10 +430,10 @@ export default function Home() {
               </div>
               <div className="space-y-6">
                 {[
-                  { step: "1", title: "無料で求人掲載", desc: "最短5分で掲載完了。掲載料は一切かかりません。" },
+                  { step: "1", title: "求人を掲載", desc: "最短5分で掲載完了。基本プランなら掲載料は無料です。" },
                   { step: "2", title: "求職者から応募", desc: "あなたの求人に興味を持った求職者から応募が届きます。" },
                   { step: "3", title: "直接やり取り", desc: "仲介なしで求職者と直接連絡。紹介手数料ゼロ。" },
-                  { step: "4", title: "採用決定", desc: "成功報酬もなし。何人採用しても完全無料です。" },
+                  { step: "4", title: "採用決定", desc: "成功報酬なし。採用が決まっても追加料金はかかりません。" },
                 ].map((item, index) => (
                   <div key={item.step} className="flex items-start gap-4">
                     <div className="w-10 h-10 bg-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0">
@@ -448,13 +450,169 @@ export default function Home() {
                 href="/post"
                 className="inline-flex items-center gap-2 mt-6 bg-teal-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-teal-600 transition-colors"
               >
-                無料で求人を出す
+                求人を掲載する
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ===== E2. 料金プランセクション ===== */}
+      <section className="py-16 md:py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-rose-600 font-semibold text-sm mb-3 tracking-wide">PRICING</p>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+              シンプルな<span className="text-rose-600">料金プラン</span>
+            </h2>
+            <p className="text-gray-500">
+              求職者は完全無料。医院向けは3つのプランからお選びいただけます
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* フリープラン */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-sm flex flex-col">
+              <div className="mb-6">
+                <h3 className="font-bold text-lg mb-1">フリープラン</h3>
+                <p className="text-gray-500 text-sm">まずはお試しで始めたい方に</p>
+              </div>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">0</span>
+                <span className="text-lg text-gray-500">円/月</span>
+              </div>
+              <ul className="space-y-3 mb-8 flex-grow">
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  求人掲載 1件まで
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  応募者との直接やり取り
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  紹介手数料・成功報酬なし
+                </li>
+              </ul>
+              <Link
+                href="/post"
+                className="block text-center bg-gray-100 text-gray-700 px-6 py-3 rounded-xl font-bold hover:bg-gray-200 transition-colors"
+              >
+                無料で始める
+              </Link>
+            </div>
+
+            {/* スタンダードプラン */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 border-2 border-rose-300 shadow-lg flex flex-col relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span className="bg-rose-600 text-white text-xs font-bold px-4 py-1 rounded-full">人気</span>
+              </div>
+              <div className="mb-6">
+                <h3 className="font-bold text-lg mb-1">スタンダード</h3>
+                <p className="text-gray-500 text-sm">本格的に採用したい方に</p>
+              </div>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-rose-600">9,800</span>
+                <span className="text-lg text-gray-500">円/月</span>
+              </div>
+              <ul className="space-y-3 mb-8 flex-grow">
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  求人掲載 3件まで
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  優先表示（検索結果の上位）
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  応募者との直接やり取り
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  紹介手数料・成功報酬なし
+                </li>
+              </ul>
+              <Link
+                href="/post"
+                className="block text-center bg-rose-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-rose-700 transition-colors shadow-sm"
+              >
+                スタンダードで始める
+              </Link>
+            </div>
+
+            {/* プレミアムプラン */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-sm flex flex-col">
+              <div className="mb-6">
+                <h3 className="font-bold text-lg mb-1">プレミアム</h3>
+                <p className="text-gray-500 text-sm">複数ポジション採用＋AI活用</p>
+              </div>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">19,800</span>
+                <span className="text-lg text-gray-500">円/月</span>
+              </div>
+              <ul className="space-y-3 mb-8 flex-grow">
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  求人掲載 無制限
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  AIマッチング（順次導入）
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  スカウト機能
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  分析レポート・閲覧数データ
+                </li>
+                <li className="flex items-start gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-teal-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  紹介手数料・成功報酬なし
+                </li>
+              </ul>
+              <Link
+                href="/post"
+                className="block text-center bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition-colors shadow-sm"
+              >
+                プレミアムで始める
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-center text-sm text-gray-400 mt-8">
+            ※ すべてのプランで紹介手数料・成功報酬は発生しません。いつでもプラン変更・解約が可能です。
+          </p>
         </div>
       </section>
 
@@ -471,18 +629,17 @@ export default function Home() {
             </p>
           </div>
 
+          <p className="text-center text-xs text-gray-400 mb-6">
+            ※以下はサービスの利用イメージです。実際の利用者の声ではありません。
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* イメージ1 */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xs font-semibold px-2.5 py-1 bg-rose-50 text-rose-600 rounded-lg">利用イメージ</span>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                &ldquo;人材紹介会社に高額な手数料を払っていた費用がゼロに。
+                &ldquo;人材紹介会社に高額な手数料を払っていた費用を大幅カット。
                 浮いた費用でスタッフの福利厚生を充実させられます。&rdquo;
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
@@ -490,56 +647,48 @@ export default function Home() {
                   A
                 </div>
                 <div>
-                  <p className="font-semibold text-sm">開業12年の院長</p>
-                  <p className="text-xs text-gray-400">利用イメージ</p>
+                  <p className="font-semibold text-sm">院長（想定ケース）</p>
+                  <p className="text-xs text-gray-400">開業12年・スタッフ5名</p>
                 </div>
               </div>
             </div>
 
             {/* イメージ2 */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xs font-semibold px-2.5 py-1 bg-green-50 text-green-600 rounded-lg">利用イメージ</span>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                &ldquo;営業電話なしで、自分のペースで転職活動ができるのが嬉しい。
-                掲載されている求人も信頼できます。&rdquo;
+                &ldquo;営業電話なしで、自分のペースで転職活動ができる。
+                求人情報を直接確認できるので安心感がある。&rdquo;
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
                 <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center text-green-600 font-bold text-sm">
                   B
                 </div>
                 <div>
-                  <p className="font-semibold text-sm">経験5年の歯科衛生士</p>
-                  <p className="text-xs text-gray-400">利用イメージ</p>
+                  <p className="font-semibold text-sm">歯科衛生士（想定ケース）</p>
+                  <p className="text-xs text-gray-400">臨床経験5年</p>
                 </div>
               </div>
             </div>
 
             {/* イメージ3 */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xs font-semibold px-2.5 py-1 bg-purple-50 text-purple-600 rounded-lg">利用イメージ</span>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 &ldquo;小さな医院でも紹介料を気にせず採用活動ができる。
-                何人採用しても0円なのは大きな安心感です。&rdquo;
+                月額プランなのでコストの見通しが立てやすい。&rdquo;
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
                 <div className="w-10 h-10 bg-purple-50 rounded-full flex items-center justify-center text-purple-600 font-bold text-sm">
                   C
                 </div>
                 <div>
-                  <p className="font-semibold text-sm">開業3年の院長</p>
-                  <p className="text-xs text-gray-400">利用イメージ</p>
+                  <p className="font-semibold text-sm">院長（想定ケース）</p>
+                  <p className="text-xs text-gray-400">開業3年・スタッフ2名</p>
                 </div>
               </div>
             </div>
@@ -548,12 +697,12 @@ export default function Home() {
           {/* サービスの事実ベース数値 */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center bg-white rounded-2xl p-6 border border-gray-100">
-              <div className="text-3xl md:text-4xl font-bold text-rose-600">0円</div>
-              <p className="text-sm text-gray-500 mt-2">掲載料金</p>
+              <div className="text-3xl md:text-4xl font-bold text-rose-600">0円〜</div>
+              <p className="text-sm text-gray-500 mt-2">基本掲載料金</p>
             </div>
             <div className="text-center bg-white rounded-2xl p-6 border border-gray-100">
               <div className="text-3xl md:text-4xl font-bold text-rose-600">0円</div>
-              <p className="text-sm text-gray-500 mt-2">紹介手数料</p>
+              <p className="text-sm text-gray-500 mt-2">紹介手数料・成功報酬</p>
             </div>
             <div className="text-center bg-white rounded-2xl p-6 border border-gray-100">
               <div className="text-3xl md:text-4xl font-bold text-rose-600">5分</div>
@@ -583,15 +732,17 @@ export default function Home() {
           <div className="space-y-3">
             <details className="bg-white rounded-xl border border-gray-100 shadow-sm group">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer list-none">
-                <span className="font-bold text-base pr-4">本当に無料ですか？追加料金はかかりませんか？</span>
+                <span className="font-bold text-base pr-4">料金体系を教えてください</span>
                 <svg className="w-5 h-5 text-gray-400 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed">
-                はい、完全無料です。求人掲載料、紹介手数料、成功報酬など、一切の費用がかかりません。
-                何件掲載しても、何人採用しても0円です。
-                現役の歯科医師が「高すぎる紹介料をなんとかしたい」という思いで始めたサービスだからこそ、この価格を実現しています。
+                求職者の方は完全無料です。医院向けには3つのプランがあります。
+                <strong>フリープラン（0円）</strong>：求人1件まで掲載可能。
+                <strong>スタンダード（月額9,800円）</strong>：求人3件まで＋優先表示。
+                <strong>プレミアム（月額19,800円）</strong>：無制限掲載＋AIマッチング＋スカウト機能＋分析レポート。
+                いずれのプランも紹介手数料・成功報酬は一切かかりません。
               </div>
             </details>
 
@@ -616,7 +767,7 @@ export default function Home() {
                 </svg>
               </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed">
-                一般的な人材紹介会社は1人の採用に数十万〜百万円以上の手数料がかかりますが、DentalAI Matchは完全無料です。
+                一般的な人材紹介会社は1人の採用に数十万〜百万円以上の手数料がかかりますが、DentalAI Matchは月額制で紹介手数料・成功報酬が一切かかりません。
                 また、紹介会社は仲介者を通すため情報が間接的になりがちですが、当サービスでは医院と求職者が直接やり取りできるので、ミスマッチが起きにくいのも大きな違いです。
               </div>
             </details>
@@ -718,12 +869,12 @@ export default function Home() {
               href="/post"
               className="bg-teal-400 text-gray-900 px-8 py-4 rounded-xl text-lg font-bold hover:bg-teal-300 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
-              求人を掲載する（無料）
+              求人を掲載する（基本無料）
             </Link>
           </div>
 
           <p className="text-rose-200 text-sm">
-            登録も掲載もすべて無料。営業電話は一切ありません。
+            求職者登録は無料。医院は基本プラン無料から。営業電話は一切ありません。
           </p>
         </div>
       </section>

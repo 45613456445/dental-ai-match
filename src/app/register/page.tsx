@@ -660,6 +660,25 @@ export default function RegisterPage() {
             </section>
           )}
 
+          {/* 同意チェックボックス（最終ステップのみ表示） */}
+          {step === 4 && (
+            <div className="flex items-start gap-3 mt-8 bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+              <input
+                type="checkbox"
+                id="consent-register"
+                required
+                className="mt-1 w-4 h-4 text-rose-600 border-gray-300 rounded focus:ring-rose-500"
+              />
+              <label htmlFor="consent-register" className="text-sm text-gray-600">
+                <Link href="/privacy" target="_blank" className="text-rose-600 underline hover:text-rose-700">プライバシーポリシー</Link>
+                および
+                <Link href="/terms" target="_blank" className="text-rose-600 underline hover:text-rose-700">利用規約</Link>
+                に同意します
+                <span className="text-red-500 ml-1">*</span>
+              </label>
+            </div>
+          )}
+
           {/* ナビゲーションボタン */}
           <div className="flex justify-between mt-8">
             {step > 1 ? (

@@ -264,6 +264,21 @@ export default function JobDetailPage({ params }: Props) {
                       className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500"
                     />
                   </div>
+                  <div className="flex items-start gap-3">
+                    <input
+                      type="checkbox"
+                      id="consent-apply"
+                      required
+                      className="mt-1 w-4 h-4 text-rose-600 border-gray-300 rounded focus:ring-rose-500"
+                    />
+                    <label htmlFor="consent-apply" className="text-xs text-gray-600">
+                      <Link href="/privacy" target="_blank" className="text-rose-600 underline hover:text-rose-700">プライバシーポリシー</Link>
+                      および
+                      <Link href="/terms" target="_blank" className="text-rose-600 underline hover:text-rose-700">利用規約</Link>
+                      に同意します
+                      <span className="text-red-500 ml-1">*</span>
+                    </label>
+                  </div>
                   <button
                     type="submit"
                     className="w-full bg-rose-600 text-white py-3 rounded-lg font-bold hover:bg-rose-700 transition-colors"

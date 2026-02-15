@@ -93,6 +93,21 @@ export default function ContactPage() {
               className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
             />
           </div>
+          <div className="flex items-start gap-3">
+            <input
+              type="checkbox"
+              id="consent-contact"
+              required
+              className="mt-1 w-4 h-4 text-rose-600 border-gray-300 rounded focus:ring-rose-500"
+            />
+            <label htmlFor="consent-contact" className="text-sm text-gray-600">
+              <Link href="/privacy" target="_blank" className="text-rose-600 underline hover:text-rose-700">プライバシーポリシー</Link>
+              および
+              <Link href="/terms" target="_blank" className="text-rose-600 underline hover:text-rose-700">利用規約</Link>
+              に同意します
+              <span className="text-red-500 ml-1">*</span>
+            </label>
+          </div>
           <div className="text-center">
             <button
               type="submit"

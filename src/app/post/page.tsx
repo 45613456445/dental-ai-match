@@ -24,6 +24,17 @@ export default function PostJobPage() {
     description: "",
     requirements: "",
     benefits: "",
+    // 法定記載事項（職業安定法 2024年改正）
+    employmentPeriod: "",
+    employmentPeriodDuration: "",
+    probationPeriod: "",
+    probationPeriodDuration: "",
+    probationPeriodConditions: "",
+    smokingPrevention: "",
+    fixedOvertimePay: "none",
+    fixedOvertimePayAmount: "",
+    fixedOvertimePayHours: "",
+    fixedOvertimePayExcess: "",
     prefecture: "愛知県",
     city: "",
     address: "",
@@ -76,6 +87,16 @@ export default function PostJobPage() {
                   description: "",
                   requirements: "",
                   benefits: "",
+                  employmentPeriod: "",
+                  employmentPeriodDuration: "",
+                  probationPeriod: "",
+                  probationPeriodDuration: "",
+                  probationPeriodConditions: "",
+                  smokingPrevention: "",
+                  fixedOvertimePay: "none",
+                  fixedOvertimePayAmount: "",
+                  fixedOvertimePayHours: "",
+                  fixedOvertimePayExcess: "",
                   prefecture: "愛知県",
                   city: "",
                   address: "",
@@ -287,6 +308,256 @@ export default function PostJobPage() {
                   placeholder="社会保険、交通費、賞与など"
                   className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
+              </div>
+            </div>
+          </section>
+
+          {/* 法定記載事項（職業安定法 2024年改正） */}
+          <section className="bg-white rounded-xl p-6 shadow-sm">
+            <h2 className="font-bold text-lg mb-2 pb-2 border-b">
+              法定記載事項
+            </h2>
+            <p className="text-xs text-gray-500 mb-6">
+              職業安定法（2024年改正）により、求人票への記載が義務付けられている項目です。
+            </p>
+            <div className="space-y-6">
+              {/* 雇用期間 */}
+              <div>
+                <label className="block text-sm font-semibold mb-1.5">
+                  雇用期間 <span className="text-red-500">*</span>
+                </label>
+                <select
+                  required
+                  value={formData.employmentPeriod}
+                  onChange={(e) => {
+                    updateField("employmentPeriod", e.target.value);
+                    if (e.target.value !== "fixed_term") {
+                      updateField("employmentPeriodDuration", "");
+                    }
+                  }}
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                >
+                  <option value="" disabled>
+                    選択してください
+                  </option>
+                  <option value="permanent">期間の定めなし</option>
+                  <option value="fixed_term">期間の定めあり</option>
+                </select>
+                {formData.employmentPeriod === "fixed_term" && (
+                  <div className="mt-3 ml-4 p-3 bg-gray-50 rounded-lg">
+                    <label className="block text-sm font-semibold mb-1.5">
+                      契約期間 <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={formData.employmentPeriodDuration}
+                      onChange={(e) =>
+                        updateField("employmentPeriodDuration", e.target.value)
+                      }
+                      placeholder="例: 1年間（更新あり）"
+                      className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                    />
+                  </div>
+                )}
+              </div>
+
+              {/* 試用期間 */}
+              <div>
+                <label className="block text-sm font-semibold mb-1.5">
+                  試用期間 <span className="text-red-500">*</span>
+                </label>
+                <select
+                  required
+                  value={formData.probationPeriod}
+                  onChange={(e) => {
+                    updateField("probationPeriod", e.target.value);
+                    if (e.target.value !== "yes") {
+                      updateField("probationPeriodDuration", "");
+                      updateField("probationPeriodConditions", "");
+                    }
+                  }}
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                >
+                  <option value="" disabled>
+                    選択してください
+                  </option>
+                  <option value="none">なし</option>
+                  <option value="yes">あり</option>
+                </select>
+                {formData.probationPeriod === "yes" && (
+                  <div className="mt-3 ml-4 p-3 bg-gray-50 rounded-lg space-y-3">
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5">
+                        試用期間の長さ <span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        required
+                        value={formData.probationPeriodDuration}
+                        onChange={(e) =>
+                          updateField("probationPeriodDuration", e.target.value)
+                        }
+                        className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                      >
+                        <option value="" disabled>
+                          選択してください
+                        </option>
+                        <option value="1ヶ月">1ヶ月</option>
+                        <option value="2ヶ月">2ヶ月</option>
+                        <option value="3ヶ月">3ヶ月</option>
+                        <option value="6ヶ月">6ヶ月</option>
+                        <option value="other">その他</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5">
+                        試用期間中の条件が異なる場合はその内容
+                      </label>
+                      <textarea
+                        rows={3}
+                        value={formData.probationPeriodConditions}
+                        onChange={(e) =>
+                          updateField(
+                            "probationPeriodConditions",
+                            e.target.value
+                          )
+                        }
+                        placeholder="例: 試用期間中は時給1,200円、社会保険加入は試用期間終了後"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* 受動喫煙防止措置 */}
+              <div>
+                <label className="block text-sm font-semibold mb-1.5">
+                  受動喫煙防止措置 <span className="text-red-500">*</span>
+                </label>
+                <select
+                  required
+                  value={formData.smokingPrevention}
+                  onChange={(e) =>
+                    updateField("smokingPrevention", e.target.value)
+                  }
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500"
+                >
+                  <option value="" disabled>
+                    選択してください
+                  </option>
+                  <option value="indoor_no_smoking">屋内禁煙</option>
+                  <option value="indoor_principle_no_smoking">
+                    屋内原則禁煙（喫煙室あり）
+                  </option>
+                  <option value="premises_no_smoking">敷地内禁煙</option>
+                </select>
+              </div>
+
+              {/* 固定残業代 */}
+              <div>
+                <label className="block text-sm font-semibold mb-1.5">
+                  固定残業代 <span className="text-red-500">*</span>
+                </label>
+                <div className="flex items-center gap-6 mt-2">
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="fixedOvertimePay"
+                      value="none"
+                      checked={formData.fixedOvertimePay === "none"}
+                      onChange={(e) =>
+                        updateField("fixedOvertimePay", e.target.value)
+                      }
+                      className="w-4 h-4 text-rose-600 focus:ring-rose-500"
+                    />
+                    <span className="text-sm">なし</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="fixedOvertimePay"
+                      value="yes"
+                      checked={formData.fixedOvertimePay === "yes"}
+                      onChange={(e) =>
+                        updateField("fixedOvertimePay", e.target.value)
+                      }
+                      className="w-4 h-4 text-rose-600 focus:ring-rose-500"
+                    />
+                    <span className="text-sm">あり</span>
+                  </label>
+                </div>
+                {formData.fixedOvertimePay === "yes" && (
+                  <div className="mt-3 ml-4 p-3 bg-gray-50 rounded-lg space-y-3">
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5">
+                        固定残業代の金額{" "}
+                        <span className="text-red-500">*</span>
+                      </label>
+                      <div className="flex items-center gap-2">
+                        <input
+                          type="number"
+                          required
+                          value={formData.fixedOvertimePayAmount}
+                          onChange={(e) =>
+                            updateField(
+                              "fixedOvertimePayAmount",
+                              e.target.value
+                            )
+                          }
+                          placeholder="例: 30000"
+                          className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                        />
+                        <span className="text-sm text-gray-600 shrink-0">
+                          円
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5">
+                        相当する時間数{" "}
+                        <span className="text-red-500">*</span>
+                      </label>
+                      <div className="flex items-center gap-2">
+                        <input
+                          type="number"
+                          required
+                          value={formData.fixedOvertimePayHours}
+                          onChange={(e) =>
+                            updateField(
+                              "fixedOvertimePayHours",
+                              e.target.value
+                            )
+                          }
+                          placeholder="例: 20"
+                          className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                        />
+                        <span className="text-sm text-gray-600 shrink-0">
+                          時間
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5">
+                        超過分の取り扱い{" "}
+                        <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={formData.fixedOvertimePayExcess}
+                        onChange={(e) =>
+                          updateField(
+                            "fixedOvertimePayExcess",
+                            e.target.value
+                          )
+                        }
+                        placeholder="例: 超過分は別途全額支給"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </section>
@@ -516,6 +787,103 @@ export default function PostJobPage() {
                   </dl>
                 </div>
 
+                {/* プレビュー：法定記載事項 */}
+                {(formData.employmentPeriod ||
+                  formData.probationPeriod ||
+                  formData.smokingPrevention ||
+                  formData.fixedOvertimePay === "yes") && (
+                  <div className="bg-white rounded-xl p-6 shadow-sm mb-4">
+                    <h4 className="font-bold text-lg mb-4 pb-2 border-b">
+                      法定記載事項
+                    </h4>
+                    <dl className="space-y-3">
+                      {formData.employmentPeriod && (
+                        <div className="flex flex-col sm:flex-row">
+                          <dt className="font-semibold text-gray-700 sm:w-40 shrink-0 mb-1 sm:mb-0">
+                            雇用期間
+                          </dt>
+                          <dd>
+                            {formData.employmentPeriod === "permanent"
+                              ? "期間の定めなし"
+                              : `期間の定めあり（${formData.employmentPeriodDuration || "未入力"}）`}
+                          </dd>
+                        </div>
+                      )}
+                      {formData.probationPeriod && (
+                        <div className="flex flex-col sm:flex-row">
+                          <dt className="font-semibold text-gray-700 sm:w-40 shrink-0 mb-1 sm:mb-0">
+                            試用期間
+                          </dt>
+                          <dd>
+                            {formData.probationPeriod === "none" ? (
+                              "なし"
+                            ) : (
+                              <div>
+                                <span>
+                                  あり（
+                                  {formData.probationPeriodDuration || "未入力"}
+                                  ）
+                                </span>
+                                {formData.probationPeriodConditions && (
+                                  <p className="text-sm text-gray-600 mt-1">
+                                    {formData.probationPeriodConditions}
+                                  </p>
+                                )}
+                              </div>
+                            )}
+                          </dd>
+                        </div>
+                      )}
+                      {formData.smokingPrevention && (
+                        <div className="flex flex-col sm:flex-row">
+                          <dt className="font-semibold text-gray-700 sm:w-40 shrink-0 mb-1 sm:mb-0">
+                            受動喫煙防止措置
+                          </dt>
+                          <dd>
+                            {formData.smokingPrevention === "indoor_no_smoking"
+                              ? "屋内禁煙"
+                              : formData.smokingPrevention ===
+                                  "indoor_principle_no_smoking"
+                                ? "屋内原則禁煙（喫煙室あり）"
+                                : formData.smokingPrevention ===
+                                    "premises_no_smoking"
+                                  ? "敷地内禁煙"
+                                  : ""}
+                          </dd>
+                        </div>
+                      )}
+                      <div className="flex flex-col sm:flex-row">
+                        <dt className="font-semibold text-gray-700 sm:w-40 shrink-0 mb-1 sm:mb-0">
+                          固定残業代
+                        </dt>
+                        <dd>
+                          {formData.fixedOvertimePay === "none" ? (
+                            "なし"
+                          ) : (
+                            <div>
+                              <span>
+                                {formData.fixedOvertimePayAmount
+                                  ? `${Number(formData.fixedOvertimePayAmount).toLocaleString()}円`
+                                  : "(金額未入力)"}
+                                （
+                                {formData.fixedOvertimePayHours
+                                  ? `${formData.fixedOvertimePayHours}時間分`
+                                  : "時間未入力"}
+                                ）
+                              </span>
+                              {formData.fixedOvertimePayExcess && (
+                                <p className="text-sm text-gray-600 mt-1">
+                                  {formData.fixedOvertimePayExcess}
+                                </p>
+                              )}
+                            </div>
+                          )}
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                )}
+
                 {/* プレビュー：仕事内容 */}
                 {formData.description && (
                   <div className="bg-white rounded-xl p-6 shadow-sm mb-4">
@@ -570,16 +938,33 @@ export default function PostJobPage() {
             </section>
           )}
 
+          {/* 同意チェックボックス */}
+          <div className="flex items-start gap-3 bg-white rounded-xl p-5 shadow-sm">
+            <input
+              type="checkbox"
+              id="consent-post"
+              required
+              className="mt-1 w-4 h-4 text-rose-600 border-gray-300 rounded focus:ring-rose-500"
+            />
+            <label htmlFor="consent-post" className="text-sm text-gray-600">
+              <Link href="/privacy" target="_blank" className="text-rose-600 underline hover:text-rose-700">プライバシーポリシー</Link>
+              および
+              <Link href="/terms" target="_blank" className="text-rose-600 underline hover:text-rose-700">利用規約</Link>
+              に同意します
+              <span className="text-red-500 ml-1">*</span>
+            </label>
+          </div>
+
           {/* 送信ボタン */}
           <div className="text-center">
             <button
               type="submit"
               className="bg-rose-600 text-white px-12 py-4 rounded-xl text-lg font-bold hover:bg-rose-700 transition-colors shadow-lg"
             >
-              求人を投稿する（無料）
+              求人を投稿する
             </button>
             <p className="text-sm text-gray-400 mt-3">
-              掲載料・紹介手数料は一切かかりません
+              基本プランは無料。紹介手数料・成功報酬は一切かかりません
             </p>
           </div>
         </form>

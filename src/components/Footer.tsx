@@ -18,8 +18,8 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
               歯科医師が作った、歯科のための
-              AI求人マッチングプラットフォーム。
-              掲載も応募も完全無料です。
+              求人マッチングプラットフォーム。
+              求職者は完全無料。医院は基本掲載無料。
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <Link href="/post" className="hover:text-white transition-colors">
-                  求人を掲載する（無料）
+                  求人を掲載する（基本無料）
                 </Link>
               </li>
             </ul>
@@ -60,7 +60,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
                 <span className="text-rose-400">&#x2713;</span>
-                求人掲載：完全無料
+                基本掲載：無料
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-rose-400">&#x2713;</span>
@@ -96,7 +96,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className="text-sm text-gray-500">
-              &copy; 2025 DentalAI Match
+              &copy; 2026 DentalAI Match
             </p>
           </div>
         </div>

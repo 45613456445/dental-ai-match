@@ -21,7 +21,7 @@ export default function Header() {
                 DentalAI Match
               </span>
               <span className="text-[10px] text-gray-400 leading-tight hidden sm:block">
-                歯科専門 AI求人プラットフォーム
+                歯科専門 求人プラットフォーム
               </span>
             </div>
           </Link>
@@ -51,7 +51,7 @@ export default function Header() {
               href="/post"
               className="bg-rose-600 text-white px-5 py-2.5 rounded-xl hover:bg-rose-700 transition-colors text-sm font-bold shadow-sm hover:shadow-md"
             >
-              無料で掲載する
+              求人を掲載する
             </Link>
           </nav>
 
@@ -117,7 +117,7 @@ export default function Header() {
                   className="bg-rose-600 text-white px-4 py-3 rounded-xl text-center hover:bg-rose-700 font-bold block shadow-sm"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  無料で掲載する
+                  求人を掲載する
                 </Link>
               </div>
             </div>
