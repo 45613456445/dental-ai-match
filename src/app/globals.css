@@ -1,38 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #fdf8f6;
   --foreground: #1a1a2e;
 
-  /* Primary - Professional Blue */
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a5f;
+  /* Primary - Warm Rose */
+  --color-primary-50: #fff1f2;
+  --color-primary-100: #ffe4e6;
+  --color-primary-200: #fecdd3;
+  --color-primary-300: #fda4af;
+  --color-primary-400: #fb7185;
+  --color-primary-500: #f43f5e;
+  --color-primary-600: #e11d48;
+  --color-primary-700: #be123c;
+  --color-primary-800: #9f1239;
+  --color-primary-900: #881337;
 
-  /* Accent - Warm Coral */
-  --color-coral-50: #fff5f3;
-  --color-coral-100: #ffe8e3;
-  --color-coral-200: #ffc9bd;
-  --color-coral-300: #ffa08e;
-  --color-coral-400: #ff7a63;
-  --color-coral-500: #f05c44;
-  --color-coral-600: #d4412e;
-
-  /* Accent - Warm Amber */
-  --color-amber-50: #fffbeb;
-  --color-amber-100: #fef3c7;
-  --color-amber-200: #fde68a;
-  --color-amber-300: #fcd34d;
-  --color-amber-400: #fbbf24;
-  --color-amber-500: #f59e0b;
-  --color-amber-600: #d97706;
+  /* Accent - Teal */
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0f766e;
 }
 
 @theme inline {
@@ -86,13 +78,13 @@ summary {
 
 /* セレクション色 */
 ::selection {
-  background-color: #dbeafe;
-  color: #1e3a5f;
+  background-color: #ffe4e6;
+  color: #881337;
 }
 
 /* フォーカス時のスタイル改善（アクセシビリティ） */
 *:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #f43f5e;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -124,7 +116,7 @@ summary {
 
 /* グラデーションテキスト */
 .gradient-text {
-  background: linear-gradient(135deg, #2563eb, #3b82f6, #60a5fa);
+  background: linear-gradient(135deg, #e11d48, #f43f5e, #fb7185);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

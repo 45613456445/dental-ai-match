@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DentalAI Match
 
-## Getting Started
+歯科医師が作った、歯科のためのAI求人マッチングプラットフォーム。
+掲載も応募も完全無料。
 
-First, run the development server:
+## 技術スタック
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **フレームワーク**: Next.js 16 + React 19
+- **スタイリング**: Tailwind CSS v4
+- **言語**: TypeScript 5
+- **AIマッチング**: Claude Agent SDK（モックモード対応）
+
+## カラーテーマ
+
+- **Primary**: Rose（ローズ系・温かいピンク）
+- **Accent**: Teal（ティール系・青緑）
+- **背景**: Warm Off-White（#fdf8f6）
+
+## ディレクトリ構成
+
+```
+src/
+  app/
+    page.tsx          -- トップページ（ランディング）
+    layout.tsx        -- ルートレイアウト
+    globals.css       -- グローバルスタイル・カラー変数
+    jobs/
+      page.tsx        -- 求人一覧・検索
+      [id]/page.tsx   -- 求人詳細・応募
+    register/page.tsx -- 求職者登録（4ステップ）
+    post/page.tsx     -- 求人投稿（医院向け）
+    contact/page.tsx  -- お問い合わせ
+    company/page.tsx  -- 運営者情報
+    privacy/page.tsx  -- プライバシーポリシー
+    terms/page.tsx    -- 利用規約
+  components/
+    Header.tsx        -- ヘッダー（ナビゲーション）
+    Footer.tsx        -- フッター
+    JobCard.tsx       -- 求人カード
+  lib/
+    dummy-data.ts     -- ダミーデータ（開発用）
+    ai/
+      types.ts        -- AI型定義
+      ai-client.ts    -- クライアントファクトリー
+      mock-client.ts  -- モック実装
+      matching-engine.ts -- スコア計算
+      prompts.ts      -- プロンプトテンプレート
+  types/
+    index.ts          -- 共通型定義
+docs/
+  globals-css.md      -- カラーシステム説明
+  ai-integration.md   -- AI統合アーキテクチャ
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 開発方法
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[http://localhost:3000](http://localhost:3000) でアクセス。
 
-## Learn More
+## AIモード切り替え
 
-To learn more about Next.js, take a look at the following resources:
+`.env.local` で制御:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+# モック（デフォルト・課金なし）
+NEXT_PUBLIC_AI_MODE=mock
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 本番（APIキー必要）
+NEXT_PUBLIC_AI_MODE=live
+ANTHROPIC_API_KEY=sk-ant-xxxxx
+```

@@ -9,7 +9,7 @@ export default function Footer() {
           {/* サービス紹介 */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+              <div className="w-9 h-9 bg-gradient-to-br from-rose-500 to-rose-600 rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold text-sm">AI</span>
               </div>
               <span className="font-bold text-lg text-white tracking-tight">
@@ -59,19 +59,19 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
-                <span className="text-blue-400">&#x2713;</span>
+                <span className="text-rose-400">&#x2713;</span>
                 求人掲載：完全無料
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-blue-400">&#x2713;</span>
+                <span className="text-rose-400">&#x2713;</span>
                 紹介手数料：なし
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-blue-400">&#x2713;</span>
+                <span className="text-rose-400">&#x2713;</span>
                 営業電話：一切なし
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-blue-400">&#x2713;</span>
+                <span className="text-rose-400">&#x2713;</span>
                 歯科医師が運営
               </li>
             </ul>

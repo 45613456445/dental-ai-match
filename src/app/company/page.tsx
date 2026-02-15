@@ -56,7 +56,7 @@ export default function CompanyPage() {
         <div className="mt-8 text-center">
           <Link
             href="/"
-            className="text-blue-600 hover:text-blue-700 font-semibold"
+            className="text-rose-600 hover:text-rose-700 font-semibold"
           >
             &larr; トップページに戻る
           </Link>

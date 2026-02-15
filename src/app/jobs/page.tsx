@@ -51,7 +51,7 @@ export default function JobsPage() {
               </svg>
               絞り込み
               {hasFilters && (
-                <span className="w-2 h-2 bg-blue-600 rounded-full" />
+                <span className="w-2 h-2 bg-rose-600 rounded-full" />
               )}
             </button>
           </div>
@@ -67,7 +67,7 @@ export default function JobsPage() {
                 placeholder="キーワードで検索（医院名、エリア、条件など）"
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
-                className="w-full border border-gray-200 rounded-xl pl-12 pr-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-50 hover:bg-white transition-colors"
+                className="w-full border border-gray-200 rounded-xl pl-12 pr-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent bg-gray-50 hover:bg-white transition-colors"
               />
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function JobsPage() {
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 sticky top-24">
               <div className="flex items-center justify-between mb-5">
                 <h2 className="font-bold text-base flex items-center gap-2">
-                  <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                   </svg>
                   条件を絞り込む
@@ -94,7 +94,7 @@ export default function JobsPage() {
                       setEmploymentType("");
                       setKeyword("");
                     }}
-                    className="text-xs text-blue-600 hover:text-blue-700 font-medium"
+                    className="text-xs text-rose-600 hover:text-rose-700 font-medium"
                   >
                     リセット
                   </button>
@@ -109,7 +109,7 @@ export default function JobsPage() {
                 <select
                   value={jobType}
                   onChange={(e) => setJobType(e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50"
+                  className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 bg-gray-50"
                 >
                   <option value="">すべての職種</option>
                   {Object.entries(JOB_TYPE_LABELS).map(([key, label]) => (
@@ -128,7 +128,7 @@ export default function JobsPage() {
                 <select
                   value={prefecture}
                   onChange={(e) => setPrefecture(e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50"
+                  className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 bg-gray-50"
                 >
                   <option value="">すべてのエリア</option>
                   {PREFECTURES.map((pref) => (
@@ -147,7 +147,7 @@ export default function JobsPage() {
                 <select
                   value={employmentType}
                   onChange={(e) => setEmploymentType(e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50"
+                  className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500 bg-gray-50"
                 >
                   <option value="">すべての雇用形態</option>
                   {Object.entries(EMPLOYMENT_TYPE_LABELS).map(
@@ -162,7 +162,7 @@ export default function JobsPage() {
 
               {/* モバイル用閉じるボタン */}
               <button
-                className="lg:hidden w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold text-sm mt-2"
+                className="lg:hidden w-full bg-rose-600 text-white py-2.5 rounded-xl font-bold text-sm mt-2"
                 onClick={() => setIsFilterOpen(false)}
               >
                 {results.length}件の求人を見る
@@ -170,14 +170,14 @@ export default function JobsPage() {
 
               {/* AIマッチング予告 */}
               <div className="mt-6 pt-5 border-t border-gray-100">
-                <div className="bg-blue-50 rounded-xl p-4">
+                <div className="bg-rose-50 rounded-xl p-4">
                   <div className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-rose-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
                     <div>
-                      <p className="text-sm font-bold text-blue-800">AIおすすめ機能</p>
-                      <p className="text-xs text-blue-600 mt-1">
+                      <p className="text-sm font-bold text-rose-800">AIおすすめ機能</p>
+                      <p className="text-xs text-rose-600 mt-1">
                         あなたに合った求人をAIがおすすめする機能を開発中です
                       </p>
                     </div>
@@ -215,7 +215,7 @@ export default function JobsPage() {
                     setEmploymentType("");
                     setKeyword("");
                   }}
-                  className="text-blue-600 hover:text-blue-700 font-semibold text-sm"
+                  className="text-rose-600 hover:text-rose-700 font-semibold text-sm"
                 >
                   条件をリセット
                 </button>

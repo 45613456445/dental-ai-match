@@ -119,11 +119,11 @@ export default function RegisterPage() {
           <p className="text-gray-600 mb-6">
             あなたの希望条件に合う求人が見つかったら、すぐにお知らせします。
           </p>
-          <div className="bg-blue-50 rounded-xl p-6 mb-8 text-left">
-            <h3 className="font-bold text-blue-900 mb-4">次のステップ</h3>
-            <ul className="space-y-3 text-blue-800">
+          <div className="bg-rose-50 rounded-xl p-6 mb-8 text-left">
+            <h3 className="font-bold text-rose-900 mb-4">次のステップ</h3>
+            <ul className="space-y-3 text-rose-800">
               <li className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-rose-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span>プロフィール登録完了</span>
@@ -151,7 +151,7 @@ export default function RegisterPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/jobs"
-              className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors"
+              className="bg-rose-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-rose-700 transition-colors"
             >
               求人を探してみる
             </Link>
@@ -180,29 +180,29 @@ export default function RegisterPage() {
           </p>
 
           {/* 登録メリット */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 text-white mb-6">
+          <div className="bg-gradient-to-r from-rose-600 to-rose-700 rounded-2xl p-6 text-white mb-6">
             <h2 className="font-bold text-lg mb-4">登録するメリット</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-amber-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-teal-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-sm">希望に合う求人をお知らせ</span>
               </div>
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-amber-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-teal-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-sm">医院と直接やり取り可能</span>
               </div>
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-amber-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-teal-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-sm">すべて完全無料で利用</span>
               </div>
               <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-amber-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-teal-300 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-sm">自分のペースで転職活動</span>
@@ -224,15 +224,15 @@ export default function RegisterPage() {
               <p className="text-xs text-green-600">しつこい勧誘はしません</p>
             </div>
           </div>
-          <div className="flex items-center gap-3 bg-blue-50 border border-blue-200 rounded-xl px-4 py-3">
-            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
-              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex items-center gap-3 bg-rose-50 border border-rose-200 rounded-xl px-4 py-3">
+            <div className="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center shrink-0">
+              <svg className="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div>
-              <p className="font-bold text-blue-800 text-sm">完全無料で利用</p>
-              <p className="text-xs text-blue-600">費用は一切かかりません</p>
+              <p className="font-bold text-rose-800 text-sm">完全無料で利用</p>
+              <p className="text-xs text-rose-600">費用は一切かかりません</p>
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function RegisterPage() {
                       step > s.num
                         ? "bg-green-500 text-white"
                         : step === s.num
-                        ? "bg-blue-600 text-white shadow-md shadow-blue-200"
+                        ? "bg-rose-600 text-white shadow-md shadow-rose-200"
                         : "bg-gray-100 text-gray-400"
                     }`}
                   >
@@ -262,7 +262,7 @@ export default function RegisterPage() {
                   </div>
                   <span
                     className={`text-[11px] mt-1.5 font-medium ${
-                      step >= s.num ? "text-blue-600" : "text-gray-400"
+                      step >= s.num ? "text-rose-600" : "text-gray-400"
                     }`}
                   >
                     {s.label}
@@ -285,7 +285,7 @@ export default function RegisterPage() {
           {step === 1 && (
             <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h2 className="font-bold text-lg mb-6 pb-3 border-b border-gray-100 flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 基本情報
@@ -301,7 +301,7 @@ export default function RegisterPage() {
                     value={formData.name}
                     onChange={(e) => updateField("name", e.target.value)}
                     placeholder="例: 山田 花子"
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-base"
                   />
                 </div>
                 <div>
@@ -314,7 +314,7 @@ export default function RegisterPage() {
                     value={formData.email}
                     onChange={(e) => updateField("email", e.target.value)}
                     placeholder="example@email.com"
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-base"
                   />
                   <p className="text-xs text-gray-400 mt-1.5">
                     求人のお知らせをお送りします
@@ -329,7 +329,7 @@ export default function RegisterPage() {
                     value={formData.phone}
                     onChange={(e) => updateField("phone", e.target.value)}
                     placeholder="090-XXXX-XXXX"
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-base"
                   />
                   <p className="text-xs text-gray-400 mt-1.5">
                     営業電話は一切しません。医院との連絡用です。
@@ -342,7 +342,7 @@ export default function RegisterPage() {
                   <select
                     value={formData.jobType}
                     onChange={(e) => updateField("jobType", e.target.value)}
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 text-base"
                   >
                     {Object.entries(JOB_TYPE_LABELS).map(([key, label]) => (
                       <option key={key} value={key}>
@@ -366,7 +366,7 @@ export default function RegisterPage() {
                         key={opt.value}
                         className={`flex items-center gap-3 p-3.5 rounded-xl border cursor-pointer transition-all ${
                           formData.currentStatus === opt.value
-                            ? "border-blue-500 bg-blue-50 shadow-sm"
+                            ? "border-rose-500 bg-rose-50 shadow-sm"
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
@@ -378,7 +378,7 @@ export default function RegisterPage() {
                           onChange={(e) =>
                             updateField("currentStatus", e.target.value)
                           }
-                          className="text-blue-600"
+                          className="text-rose-600"
                         />
                         <span className="text-sm">{opt.label}</span>
                       </label>
@@ -393,7 +393,7 @@ export default function RegisterPage() {
           {step === 2 && (
             <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h2 className="font-bold text-lg mb-6 pb-3 border-b border-gray-100 flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 経験・スキル
@@ -408,7 +408,7 @@ export default function RegisterPage() {
                     onChange={(e) =>
                       updateField("experienceYears", e.target.value)
                     }
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 text-base"
                   >
                     <option value="">選択してください</option>
                     <option value="0">未経験・新卒</option>
@@ -432,8 +432,8 @@ export default function RegisterPage() {
                         onClick={() => toggleArrayItem("skills", skill)}
                         className={`text-sm px-4 py-2 rounded-full border transition-all ${
                           formData.skills.includes(skill)
-                            ? "bg-blue-600 text-white border-blue-600 shadow-sm"
-                            : "bg-white text-gray-600 border-gray-200 hover:border-blue-300 hover:bg-blue-50"
+                            ? "bg-rose-600 text-white border-rose-600 shadow-sm"
+                            : "bg-white text-gray-600 border-gray-200 hover:border-rose-300 hover:bg-rose-50"
                         }`}
                       >
                         {skill}
@@ -449,7 +449,7 @@ export default function RegisterPage() {
           {step === 3 && (
             <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h2 className="font-bold text-lg mb-6 pb-3 border-b border-gray-100 flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
                 希望条件
@@ -465,7 +465,7 @@ export default function RegisterPage() {
                       onChange={(e) =>
                         updateField("preferredPrefecture", e.target.value)
                       }
-                      className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                      className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 text-base"
                     >
                       {PREFECTURES.map((pref) => (
                         <option key={pref} value={pref}>
@@ -485,7 +485,7 @@ export default function RegisterPage() {
                         updateField("preferredCity", e.target.value)
                       }
                       placeholder="例: 名古屋市千種区"
-                      className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                      className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-base"
                     />
                   </div>
                 </div>
@@ -499,7 +499,7 @@ export default function RegisterPage() {
                     onChange={(e) =>
                       updateField("preferredEmploymentType", e.target.value)
                     }
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 text-base"
                   >
                     {Object.entries(EMPLOYMENT_TYPE_LABELS).map(
                       ([key, label]) => (
@@ -520,7 +520,7 @@ export default function RegisterPage() {
                     onChange={(e) =>
                       updateField("preferredSalaryMin", e.target.value)
                     }
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 text-base"
                   >
                     <option value="">こだわらない</option>
                     <option value="200000">20万円以上</option>
@@ -546,8 +546,8 @@ export default function RegisterPage() {
                         }
                         className={`text-sm px-4 py-2 rounded-full border transition-all ${
                           formData.preferredWorkStyle.includes(style)
-                            ? "bg-blue-600 text-white border-blue-600 shadow-sm"
-                            : "bg-white text-gray-600 border-gray-200 hover:border-blue-300 hover:bg-blue-50"
+                            ? "bg-rose-600 text-white border-rose-600 shadow-sm"
+                            : "bg-white text-gray-600 border-gray-200 hover:border-rose-300 hover:bg-rose-50"
                         }`}
                       >
                         {style}
@@ -565,7 +565,7 @@ export default function RegisterPage() {
                     onChange={(e) =>
                       updateField("availableDate", e.target.value)
                     }
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 text-base"
                   >
                     <option value="">選択してください</option>
                     <option value="immediately">すぐに働ける</option>
@@ -583,7 +583,7 @@ export default function RegisterPage() {
           {step === 4 && (
             <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h2 className="font-bold text-lg mb-6 pb-3 border-b border-gray-100 flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                 </svg>
                 自己PR（任意）
@@ -600,7 +600,7 @@ export default function RegisterPage() {
                       updateField("selfIntroduction", e.target.value)
                     }
                     placeholder="あなたの強みや経験をアピールしてください。空欄でもOKです。"
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-base"
                   />
                 </div>
                 <div>
@@ -614,7 +614,7 @@ export default function RegisterPage() {
                       updateField("motivation", e.target.value)
                     }
                     placeholder="例: 人間関係の良い職場で長く働きたい、スキルアップできる環境が良い、など"
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent text-base"
                   />
                 </div>
 
@@ -684,7 +684,7 @@ export default function RegisterPage() {
                 onClick={() => setStep(step + 1)}
                 className={`px-8 py-3 rounded-xl font-bold transition-all flex items-center gap-2 ${
                   canProceed()
-                    ? "bg-blue-600 text-white hover:bg-blue-700 shadow-sm hover:shadow-md"
+                    ? "bg-rose-600 text-white hover:bg-rose-700 shadow-sm hover:shadow-md"
                     : "bg-gray-200 text-gray-400 cursor-not-allowed"
                 }`}
               >
@@ -696,7 +696,7 @@ export default function RegisterPage() {
             ) : (
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-sm hover:shadow-md flex items-center gap-2"
+                className="bg-rose-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-rose-700 transition-all shadow-sm hover:shadow-md flex items-center gap-2"
               >
                 登録する（無料）
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -712,8 +712,8 @@ export default function RegisterPage() {
           <h3 className="font-bold text-center text-sm text-gray-700 mb-4">安心してご利用いただけます</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="text-center p-3">
-              <div className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-10 h-10 bg-rose-50 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
@@ -736,8 +736,8 @@ export default function RegisterPage() {
               </p>
             </div>
             <div className="text-center p-3">
-              <div className="w-10 h-10 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-2">
-                <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-10 h-10 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-2">
+                <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>

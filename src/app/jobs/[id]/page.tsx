@@ -28,7 +28,7 @@ export default function JobDetailPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 py-20 text-center">
         <div className="text-4xl mb-4">&#x1f6ab;</div>
         <h1 className="text-2xl font-bold mb-4">求人が見つかりませんでした</h1>
-        <Link href="/jobs" className="text-blue-600 hover:underline">
+        <Link href="/jobs" className="text-rose-600 hover:underline">
           求人一覧に戻る
         </Link>
       </div>
@@ -51,11 +51,11 @@ export default function JobDetailPage({ params }: Props) {
       {/* パンくず */}
       <div className="bg-white border-b">
         <div className="max-w-4xl mx-auto px-4 py-3 text-sm text-gray-500">
-          <Link href="/" className="hover:text-blue-600">
+          <Link href="/" className="hover:text-rose-600">
             トップ
           </Link>
           <span className="mx-2">/</span>
-          <Link href="/jobs" className="hover:text-blue-600">
+          <Link href="/jobs" className="hover:text-rose-600">
             求人一覧
           </Link>
           <span className="mx-2">/</span>
@@ -107,7 +107,7 @@ export default function JobDetailPage({ params }: Props) {
                   <dt className="font-semibold text-gray-700 sm:w-32 shrink-0 mb-1 sm:mb-0">
                     給与
                   </dt>
-                  <dd className="text-blue-600 font-bold text-lg">
+                  <dd className="text-rose-600 font-bold text-lg">
                     {salaryText}
                   </dd>
                 </div>
@@ -176,7 +176,7 @@ export default function JobDetailPage({ params }: Props) {
                   {job.clinic.features.map((f) => (
                     <span
                       key={f}
-                      className="text-sm px-3 py-1 bg-blue-50 text-blue-700 rounded-full"
+                      className="text-sm px-3 py-1 bg-rose-50 text-rose-700 rounded-full"
                     >
                       {f}
                     </span>
@@ -190,7 +190,7 @@ export default function JobDetailPage({ params }: Props) {
           <aside className="lg:w-80 shrink-0">
             <div className="bg-white rounded-xl p-6 shadow-sm sticky top-24">
               <div className="text-center mb-4">
-                <div className="text-2xl font-bold text-blue-600 mb-1">
+                <div className="text-2xl font-bold text-rose-600 mb-1">
                   {salaryText}
                 </div>
                 <p className="text-sm text-gray-500">
@@ -220,7 +220,7 @@ export default function JobDetailPage({ params }: Props) {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500"
                     />
                   </div>
                   <div>
@@ -234,7 +234,7 @@ export default function JobDetailPage({ params }: Props) {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500"
                     />
                   </div>
                   <div>
@@ -247,7 +247,7 @@ export default function JobDetailPage({ params }: Props) {
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
                       }
-                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500"
                     />
                   </div>
                   <div>
@@ -261,12 +261,12 @@ export default function JobDetailPage({ params }: Props) {
                         setFormData({ ...formData, message: e.target.value })
                       }
                       placeholder="自己PRや質問など"
-                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+                    className="w-full bg-rose-600 text-white py-3 rounded-lg font-bold hover:bg-rose-700 transition-colors"
                   >
                     応募する
                   </button>
@@ -282,7 +282,7 @@ export default function JobDetailPage({ params }: Props) {
                 <>
                   <button
                     onClick={() => setShowApplyForm(true)}
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors mb-3"
+                    className="w-full bg-rose-600 text-white py-3 rounded-lg font-bold hover:bg-rose-700 transition-colors mb-3"
                   >
                     この求人に応募する
                   </button>

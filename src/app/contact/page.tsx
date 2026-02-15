@@ -27,7 +27,7 @@ export default function ContactPage() {
           </p>
           <Link
             href="/"
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors inline-block"
+            className="bg-rose-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-rose-700 transition-colors inline-block"
           >
             トップページに戻る
           </Link>
@@ -56,7 +56,7 @@ export default function ContactPage() {
               type="text"
               required
               placeholder="例: 山田 太郎"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
             />
           </div>
           <div>
@@ -67,14 +67,14 @@ export default function ContactPage() {
               type="email"
               required
               placeholder="example@email.com"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
             />
           </div>
           <div>
             <label className="block text-sm font-semibold mb-1.5">
               お問い合わせ種別
             </label>
-            <select className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <select className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500">
               <option>サービスについて</option>
               <option>求人掲載について</option>
               <option>求職者登録について</option>
@@ -90,13 +90,13 @@ export default function ContactPage() {
               rows={5}
               required
               placeholder="お問い合わせ内容を記載してください"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
             />
           </div>
           <div className="text-center">
             <button
               type="submit"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+              className="bg-rose-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-rose-700 transition-colors"
             >
               送信する
             </button>
@@ -106,7 +106,7 @@ export default function ContactPage() {
         <div className="mt-8 text-center">
           <Link
             href="/"
-            className="text-blue-600 hover:text-blue-700 font-semibold"
+            className="text-rose-600 hover:text-rose-700 font-semibold"
           >
             &larr; トップページに戻る
           </Link>

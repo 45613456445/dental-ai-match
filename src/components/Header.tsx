@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* ロゴ */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+            <div className="w-9 h-9 bg-gradient-to-br from-rose-600 to-rose-700 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
               <span className="text-white font-bold text-sm tracking-tight">AI</span>
             </div>
             <div className="flex flex-col">
@@ -30,26 +30,26 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-1">
             <Link
               href="/jobs"
-              className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-lg hover:bg-blue-50/50 transition-all text-[15px] font-medium"
+              className="text-gray-600 hover:text-rose-600 px-3 py-2 rounded-lg hover:bg-rose-50/50 transition-all text-[15px] font-medium"
             >
               求人を探す
             </Link>
             <Link
               href="/register"
-              className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-lg hover:bg-blue-50/50 transition-all text-[15px] font-medium"
+              className="text-gray-600 hover:text-rose-600 px-3 py-2 rounded-lg hover:bg-rose-50/50 transition-all text-[15px] font-medium"
             >
               求職者登録
             </Link>
             <Link
               href="/post"
-              className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-lg hover:bg-blue-50/50 transition-all text-[15px] font-medium"
+              className="text-gray-600 hover:text-rose-600 px-3 py-2 rounded-lg hover:bg-rose-50/50 transition-all text-[15px] font-medium"
             >
               求人を出す
             </Link>
             <div className="w-px h-6 bg-gray-200 mx-2" />
             <Link
               href="/post"
-              className="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors text-sm font-bold shadow-sm hover:shadow-md"
+              className="bg-rose-600 text-white px-5 py-2.5 rounded-xl hover:bg-rose-700 transition-colors text-sm font-bold shadow-sm hover:shadow-md"
             >
               無料で掲載する
             </Link>
@@ -92,21 +92,21 @@ export default function Header() {
             <div className="flex flex-col gap-1">
               <Link
                 href="/jobs"
-                className="text-gray-700 hover:text-blue-600 hover:bg-blue-50 py-3 px-3 rounded-lg transition-colors font-medium"
+                className="text-gray-700 hover:text-rose-600 hover:bg-rose-50 py-3 px-3 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 求人を探す
               </Link>
               <Link
                 href="/register"
-                className="text-gray-700 hover:text-blue-600 hover:bg-blue-50 py-3 px-3 rounded-lg transition-colors font-medium"
+                className="text-gray-700 hover:text-rose-600 hover:bg-rose-50 py-3 px-3 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 求職者登録
               </Link>
               <Link
                 href="/post"
-                className="text-gray-700 hover:text-blue-600 hover:bg-blue-50 py-3 px-3 rounded-lg transition-colors font-medium"
+                className="text-gray-700 hover:text-rose-600 hover:bg-rose-50 py-3 px-3 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 求人を出す（医院向け）
@@ -114,7 +114,7 @@ export default function Header() {
               <div className="pt-2 mt-2 border-t border-gray-100">
                 <Link
                   href="/post"
-                  className="bg-blue-600 text-white px-4 py-3 rounded-xl text-center hover:bg-blue-700 font-bold block shadow-sm"
+                  className="bg-rose-600 text-white px-4 py-3 rounded-xl text-center hover:bg-rose-700 font-bold block shadow-sm"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   無料で掲載する

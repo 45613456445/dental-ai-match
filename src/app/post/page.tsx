@@ -58,7 +58,7 @@ export default function PostJobPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/jobs"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+              className="bg-rose-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-rose-700 transition-colors"
             >
               求人一覧を見る
             </Link>
@@ -110,14 +110,14 @@ export default function PostJobPage() {
         </div>
 
         {/* 無料アピール */}
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+        <div className="bg-rose-50 border border-rose-200 rounded-xl p-4 mb-8">
           <div className="flex items-start gap-3">
             <span className="text-2xl">&#x1f4a1;</span>
             <div>
-              <p className="font-semibold text-blue-900">
+              <p className="font-semibold text-rose-900">
                 DentalAI Matchは完全無料です
               </p>
-              <p className="text-sm text-blue-700 mt-1">
+              <p className="text-sm text-rose-700 mt-1">
                 求人掲載料：0円 / 紹介手数料：0円 / 成功報酬：0円
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function PostJobPage() {
                   value={formData.clinicName}
                   onChange={(e) => updateField("clinicName", e.target.value)}
                   placeholder="例: さくら歯科クリニック"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
               <div>
@@ -155,7 +155,7 @@ export default function PostJobPage() {
                     updateField("clinicDescription", e.target.value)
                   }
                   placeholder="医院の特徴や雰囲気を教えてください"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function PostJobPage() {
                   value={formData.title}
                   onChange={(e) => updateField("title", e.target.value)}
                   placeholder="例: 【残業なし】歯科衛生士募集！アットホームなクリニック"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
 
@@ -189,7 +189,7 @@ export default function PostJobPage() {
                   <select
                     value={formData.jobType}
                     onChange={(e) => updateField("jobType", e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   >
                     {Object.entries(JOB_TYPE_LABELS).map(([key, label]) => (
                       <option key={key} value={key}>
@@ -207,7 +207,7 @@ export default function PostJobPage() {
                     onChange={(e) =>
                       updateField("employmentType", e.target.value)
                     }
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   >
                     {Object.entries(EMPLOYMENT_TYPE_LABELS).map(
                       ([key, label]) => (
@@ -231,7 +231,7 @@ export default function PostJobPage() {
                     value={formData.salaryMin}
                     onChange={(e) => updateField("salaryMin", e.target.value)}
                     placeholder="例: 280000"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -244,7 +244,7 @@ export default function PostJobPage() {
                     value={formData.salaryMax}
                     onChange={(e) => updateField("salaryMax", e.target.value)}
                     placeholder="例: 350000"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function PostJobPage() {
                   value={formData.description}
                   onChange={(e) => updateField("description", e.target.value)}
                   placeholder="具体的な仕事内容を記載してください"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
 
@@ -272,7 +272,7 @@ export default function PostJobPage() {
                   value={formData.requirements}
                   onChange={(e) => updateField("requirements", e.target.value)}
                   placeholder="必要な資格や経験を記載してください"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
 
@@ -285,7 +285,7 @@ export default function PostJobPage() {
                   value={formData.benefits}
                   onChange={(e) => updateField("benefits", e.target.value)}
                   placeholder="社会保険、交通費、賞与など"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
             </div>
@@ -305,7 +305,7 @@ export default function PostJobPage() {
                   <select
                     value={formData.prefecture}
                     onChange={(e) => updateField("prefecture", e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500"
                   >
                     {PREFECTURES.map((pref) => (
                       <option key={pref} value={pref}>
@@ -324,7 +324,7 @@ export default function PostJobPage() {
                     value={formData.city}
                     onChange={(e) => updateField("city", e.target.value)}
                     placeholder="例: 名古屋市千種区"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -337,7 +337,7 @@ export default function PostJobPage() {
                   value={formData.address}
                   onChange={(e) => updateField("address", e.target.value)}
                   placeholder="例: 名古屋市千種区○○町1-2-3"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
               <div>
@@ -349,7 +349,7 @@ export default function PostJobPage() {
                   value={formData.workingHours}
                   onChange={(e) => updateField("workingHours", e.target.value)}
                   placeholder="例: 9:00〜18:00（休憩90分）"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
               <div>
@@ -361,7 +361,7 @@ export default function PostJobPage() {
                   value={formData.holidays}
                   onChange={(e) => updateField("holidays", e.target.value)}
                   placeholder="例: 木曜・日曜・祝日"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function PostJobPage() {
                   required
                   value={formData.contactName}
                   onChange={(e) => updateField("contactName", e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
               <div>
@@ -394,7 +394,7 @@ export default function PostJobPage() {
                   required
                   value={formData.contactEmail}
                   onChange={(e) => updateField("contactEmail", e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
               <div>
@@ -405,7 +405,7 @@ export default function PostJobPage() {
                   type="tel"
                   value={formData.contactPhone}
                   onChange={(e) => updateField("contactPhone", e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
                 />
               </div>
             </div>
@@ -416,7 +416,7 @@ export default function PostJobPage() {
             <button
               type="button"
               onClick={() => setShowPreview(!showPreview)}
-              className="inline-flex items-center gap-2 border border-blue-600 text-blue-600 px-6 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center gap-2 border border-rose-600 text-rose-600 px-6 py-3 rounded-xl font-bold hover:bg-rose-50 transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -428,9 +428,9 @@ export default function PostJobPage() {
 
           {/* プレビュー表示 */}
           {showPreview && (
-            <section className="border-2 border-blue-300 rounded-xl overflow-hidden">
-              <div className="bg-blue-50 px-6 py-3 border-b border-blue-200">
-                <p className="font-bold text-blue-800 text-sm flex items-center gap-2">
+            <section className="border-2 border-rose-300 rounded-xl overflow-hidden">
+              <div className="bg-rose-50 px-6 py-3 border-b border-rose-200">
+                <p className="font-bold text-rose-800 text-sm flex items-center gap-2">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -481,7 +481,7 @@ export default function PostJobPage() {
                       <dt className="font-semibold text-gray-700 sm:w-32 shrink-0 mb-1 sm:mb-0">
                         給与
                       </dt>
-                      <dd className="text-blue-600 font-bold text-lg">
+                      <dd className="text-rose-600 font-bold text-lg">
                         {formData.salaryMin && formData.salaryMax
                           ? formData.employmentType === "part_time"
                             ? `時給 ${Number(formData.salaryMin).toLocaleString()}〜${Number(formData.salaryMax).toLocaleString()}円`
@@ -574,7 +574,7 @@ export default function PostJobPage() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-blue-600 text-white px-12 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition-colors shadow-lg"
+              className="bg-rose-600 text-white px-12 py-4 rounded-xl text-lg font-bold hover:bg-rose-700 transition-colors shadow-lg"
             >
               求人を投稿する（無料）
             </button>
