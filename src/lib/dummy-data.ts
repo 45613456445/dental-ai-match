@@ -2,7 +2,7 @@
 // Phase 1ではSupabaseの代わりにこのデータを使用する
 // Supabase接続後はこのファイルは不要になる
 
-import { Job, Clinic } from "@/types";
+import { Job, Clinic, JobSeeker } from "@/types";
 
 export const clinics: Clinic[] = [
   {
@@ -201,6 +201,155 @@ export const jobs: Job[] = [
     clinic: clinics[4],
   },
 ];
+
+export const seekers: JobSeeker[] = [
+  {
+    id: "seeker-1",
+    name: "田中 美咲",
+    email: "tanaka@example.com",
+    phone: "090-1234-5678",
+    job_type: "dental_hygienist",
+    experience_years: 5,
+    skills: ["SRP", "歯周治療", "予防処置", "ホワイトニング"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "名古屋市千種区",
+    preferred_employment_type: "full_time",
+    preferred_salary_min: 280000,
+    preferred_work_style: ["残業なし", "駅近"],
+    self_introduction: "予防歯科を中心に5年間勤務してきました。患者さんとの信頼関係を大切にしています。",
+    motivation: "長く働ける環境で、予防歯科のスキルをさらに伸ばしたい",
+    created_at: "2025-02-01",
+  },
+  {
+    id: "seeker-2",
+    name: "鈴木 あゆみ",
+    email: "suzuki@example.com",
+    job_type: "dental_hygienist",
+    experience_years: 2,
+    skills: ["予防処置", "TBI（歯磨き指導）", "小児対応"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "長久手市",
+    preferred_employment_type: "full_time",
+    preferred_salary_min: 250000,
+    preferred_work_style: ["託児所あり", "車通勤OK", "週休2日以上"],
+    self_introduction: "2歳の子供がいるため、託児所のある職場を探しています。小児歯科の経験を活かしたいです。",
+    motivation: "子育てと仕事を両立できる環境で働きたい",
+    created_at: "2025-02-03",
+  },
+  {
+    id: "seeker-3",
+    name: "佐藤 恵理",
+    email: "sato@example.com",
+    phone: "080-9876-5432",
+    job_type: "dental_hygienist",
+    experience_years: 10,
+    skills: ["SRP", "歯周治療", "インプラントメンテナンス", "ホワイトニング", "口腔ケア"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "名古屋市港区",
+    preferred_employment_type: "full_time",
+    preferred_salary_min: 350000,
+    preferred_work_style: ["研修充実", "週休2日以上"],
+    self_introduction: "10年の経験を活かし、インプラントメンテナンスや歯周治療を専門的に行ってきました。",
+    motivation: "最新設備のある環境でスキルアップしたい",
+    created_at: "2025-02-05",
+  },
+  {
+    id: "seeker-4",
+    name: "山本 さくら",
+    email: "yamamoto@example.com",
+    job_type: "dental_hygienist",
+    experience_years: 0,
+    skills: ["予防処置", "TBI（歯磨き指導）"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "名古屋市中区",
+    preferred_employment_type: "full_time",
+    preferred_salary_min: 230000,
+    preferred_work_style: ["研修充実", "ブランクOK", "駅近"],
+    self_introduction: "今年の春に歯科衛生士の資格を取得しました。一から丁寧に指導していただける環境を希望しています。",
+    motivation: "新卒として基礎からしっかり学びたい",
+    created_at: "2025-02-07",
+  },
+  {
+    id: "seeker-5",
+    name: "高橋 真由美",
+    email: "takahashi@example.com",
+    job_type: "dental_hygienist",
+    experience_years: 15,
+    skills: ["SRP", "歯周治療", "予防処置", "訪問歯科", "口腔ケア", "レントゲン撮影"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "春日井市",
+    preferred_employment_type: "part_time",
+    preferred_salary_min: 1800,
+    preferred_work_style: ["時短勤務OK", "扶養内OK", "車通勤OK"],
+    self_introduction: "15年のキャリアがあります。訪問歯科の経験もあり、高齢者対応が得意です。扶養内で週3日勤務希望です。",
+    motivation: "自分のペースで無理なく働きたい",
+    created_at: "2025-02-08",
+  },
+  {
+    id: "seeker-6",
+    name: "中村 太郎",
+    email: "nakamura@example.com",
+    phone: "070-1111-2222",
+    job_type: "dentist",
+    experience_years: 8,
+    skills: ["一般歯科", "インプラント", "審美歯科", "歯周病治療"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "名古屋市中区",
+    preferred_employment_type: "full_time",
+    preferred_salary_min: 700000,
+    preferred_work_style: ["週休2日以上"],
+    self_introduction: "審美歯科とインプラントを中心に8年の経験があります。将来的に開業を目指しています。",
+    motivation: "審美歯科のスキルを高められる環境で経験を積みたい",
+    created_at: "2025-02-09",
+  },
+  {
+    id: "seeker-7",
+    name: "伊藤 健太",
+    email: "ito@example.com",
+    job_type: "dentist",
+    experience_years: 3,
+    skills: ["一般歯科", "小児歯科", "予防歯科", "根管治療"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "名古屋市千種区",
+    preferred_employment_type: "full_time",
+    preferred_salary_min: 600000,
+    preferred_work_style: ["研修充実"],
+    self_introduction: "小児歯科と予防歯科に興味があり、地域密着型の医院で勤務したいと考えています。",
+    motivation: "幅広い症例を経験してスキルアップしたい",
+    created_at: "2025-02-10",
+  },
+  {
+    id: "seeker-8",
+    name: "木村 優花",
+    email: "kimura@example.com",
+    job_type: "dental_assistant",
+    experience_years: 1,
+    skills: ["受付対応", "アシスト業務", "器具の滅菌", "患者対応"],
+    preferred_prefecture: "愛知県",
+    preferred_city: "春日井市",
+    preferred_employment_type: "full_time",
+    preferred_salary_min: 200000,
+    preferred_work_style: ["残業なし", "車通勤OK"],
+    self_introduction: "歯科助手として1年勤務しました。受付対応やアシスト業務は一通りできます。明るい職場で働きたいです。",
+    motivation: "アットホームな職場で長く安定して働きたい",
+    created_at: "2025-02-12",
+  },
+];
+
+/** IDで求職者を取得 */
+export function getSeekerById(id: string): JobSeeker | undefined {
+  return seekers.find((s) => s.id === id);
+}
+
+/** 全求職者を取得 */
+export function getAllSeekers(): JobSeeker[] {
+  return seekers;
+}
+
+/** 全求人を取得 */
+export function getAllJobs(): Job[] {
+  return jobs.filter((j) => j.is_active);
+}
 
 /** IDで求人を取得 */
 export function getJobById(id: string): Job | undefined {

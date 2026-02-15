@@ -13,7 +13,7 @@ export type AIMatchResult = {
 
 /** マッチした理由 */
 export type MatchReason = {
-  category: "skills" | "location" | "culture" | "salary" | "experience";
+  category: "skills" | "location" | "culture" | "salary" | "experience" | "job_type" | "work_style" | "employment_type";
   label: string;             // 例: "スキルマッチ"
   score: number;             // 0〜100のカテゴリ別スコア
   detail: string;            // 詳細説明
@@ -30,6 +30,7 @@ export type CandidateProfile = {
   preferredCity: string;
   preferredSalaryMin: number;
   preferredWorkStyle: string[];
+  preferredEmploymentType: string;
   selfIntroduction: string;
 };
 
@@ -38,6 +39,7 @@ export type JobProfile = {
   id: string;
   title: string;
   jobType: string;
+  employmentType: string;
   salaryMin: number;
   salaryMax: number;
   prefecture: string;
@@ -45,6 +47,9 @@ export type JobProfile = {
   features: string[];
   requirements: string;
   description: string;
+  benefits: string;
+  holidays: string;
+  workingHours: string;
 };
 
 /** AIクライアントのインターフェース（共通API） */

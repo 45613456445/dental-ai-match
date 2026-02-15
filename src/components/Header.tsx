@@ -46,6 +46,18 @@ export default function Header() {
             >
               求人を出す
             </Link>
+            <Link
+              href="/demo"
+              className="text-gray-600 hover:text-rose-600 px-3 py-2 rounded-lg hover:bg-rose-50/50 transition-all text-[15px] font-medium"
+            >
+              使い方
+            </Link>
+            <Link
+              href="/matching"
+              className="text-gray-600 hover:text-rose-600 px-3 py-2 rounded-lg hover:bg-rose-50/50 transition-all text-[15px] font-medium"
+            >
+              マッチング
+            </Link>
             <div className="w-px h-6 bg-gray-200 mx-2" />
             <Link
               href="/post"
@@ -110,6 +122,20 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 求人を出す（医院向け）
+              </Link>
+              <Link
+                href="/demo"
+                className="text-gray-700 hover:text-rose-600 hover:bg-rose-50 py-3 px-3 rounded-lg transition-colors font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                使い方
+              </Link>
+              <Link
+                href="/matching"
+                className="text-gray-700 hover:text-rose-600 hover:bg-rose-50 py-3 px-3 rounded-lg transition-colors font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                マッチング
               </Link>
               <div className="pt-2 mt-2 border-t border-gray-100">
                 <Link

@@ -150,6 +150,12 @@ export default function RegisterPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
+              href="/matching"
+              className="bg-teal-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-teal-700 transition-colors"
+            >
+              マッチング結果を見る
+            </Link>
+            <Link
               href="/jobs"
               className="bg-rose-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-rose-700 transition-colors"
             >

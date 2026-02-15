@@ -59,11 +59,17 @@ export type JobSeeker = {
   id: string;
   name: string;
   email: string;
+  phone?: string;
   job_type: JobType;
   experience_years: number;
+  skills: string[];
   preferred_prefecture: string;
+  preferred_city: string;
   preferred_employment_type: EmploymentType;
+  preferred_salary_min: number;
+  preferred_work_style: string[];
   self_introduction: string;
+  motivation?: string;
   created_at: string;
 };
 
